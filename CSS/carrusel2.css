@@ -1,0 +1,41 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

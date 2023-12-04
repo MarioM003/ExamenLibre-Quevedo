@@ -1,0 +1,90 @@
+*::after *::before * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border-radius: 20px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info-product {
+    padding: 15px 30px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all.5s;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.info-product {
+    padding: 15px 15px;
+    line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background: #0b76a6;
+    background-color: black;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    /* Añadir relleno para que el botón sea visible */
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#menuDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#menuDesplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#menuDesplegable a:hover {
+    background-color: #0b76a6;
+}

@@ -1,0 +1,141 @@
+M {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.slider-box {
+    /* Estilos para el slider */
+    width: 600px;
+    height: 500px;
+    margin: 1px auto 0;
+    /* Ajusta el margen superior para que no se solape con el encabezado */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* Un índice z menor que el encabezado para estar detrás de él */
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #FFFFFF;
+}
+
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider-box img {
+    width: 110%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    60% {
+        margin-left: -200%;
+    }
+    80% {
+        margin-left: -300%;
+    }
+    90% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    .slider-box {
+        width: 100%;
+    }
+}
+
+
+/* ...otros estilos... */
+
+#main-header {
+    /* Estilos para el encabezado */
+    background: #333;
+    color: white;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    /* Asegura un índice z alto para que esté por encima de otros elementos */
+}
+
+body {
+    /* Estilos para el cuerpo */
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
+    /* Relleno superior igual a la altura de la cabecera */
+}
+
+#main-content {
+    /* Estilos para el contenido principal */
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 40px;
+    margin-top: 80px;
+    /* Ajuste del margen superior para que no atraviese el header */
+}
+
+
+/* ...otros estilos... */
